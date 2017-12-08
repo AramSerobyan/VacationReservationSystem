@@ -5,9 +5,10 @@
 #include "Department.hpp"
 #include <vector>
 
-class ListOfDeparments {
+class ListOfDepartments {
 
 public:
+	int getDepartment(std::string name);
 	std::vector<Department> departments;
 	int load();
 };

@@ -1,7 +1,7 @@
 #ifndef _COMPANY_HPP_
 #define _COMPANY_HPP_
 
-#include <string
+#include <string>
 
 
 class Company {
