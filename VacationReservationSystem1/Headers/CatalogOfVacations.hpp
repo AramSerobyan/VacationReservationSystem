@@ -1,4 +1,4 @@
-astd::vector<Department> departments; once
+#pragma once
 #ifndef _CATALOGOFVACATIONS_HPP_
 #define _CATALOGOFVACATIONS_HPP_
 
@@ -15,7 +15,7 @@ public:
 
 private:
 	std::vector<Vacation> vacations;
-}
+};
 
 
 #endif

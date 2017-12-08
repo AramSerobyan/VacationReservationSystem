@@ -11,6 +11,7 @@ private:
 	Employee emp;
 	int Id;
 public:
+	Vacation(Employee emp,timeInfo startDay, timeInfo endDay);
 	Employee getEmployee() { return emp; }
 	int getId() { return Id; }
 	timeInfo getStartDay() { return startDay; }

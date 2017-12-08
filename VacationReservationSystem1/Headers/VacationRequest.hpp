@@ -1,8 +1,8 @@
 #ifndef _VACATION_REQUEST_HPP_
 #define _VACATION_REQUEST_HPP_
 #include <string>
-#include <TimeInfo.hpp>
-#include <Department.hpp>
+#include "TimeInfo.hpp"
+#include "Department.hpp"
 #include <utility>
 
 class VacationRequest {
@@ -12,7 +12,7 @@ private:
 	Department department;
 public:
 	int becomeEmpty(bool isCancelled);
-	int checkIntersection(std::pair<timeinfo, timeinfo>, bool *res)
+	int checkIntersection(std::pair<timeInfo, timeInfo>, bool *res)
 };
 
 

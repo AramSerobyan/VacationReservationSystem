@@ -24,5 +24,5 @@ public:
 	bool getStatus() { return status; }
 	int updateVacationDays(int num);
 	int newNotification(int requestID); 
-}
+};
 #endif    

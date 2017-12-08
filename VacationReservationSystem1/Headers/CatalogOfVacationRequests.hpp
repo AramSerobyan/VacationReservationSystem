@@ -24,7 +24,7 @@ public:
 private:
 	std::vector<VacationRequest> requests;
 	int generateId();
-}
+};
 
 
 #endif

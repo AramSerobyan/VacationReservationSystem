@@ -19,7 +19,7 @@ public:
 
 private:
 	std::vector<VacationRequest> requests;
-}
+};
 
 
 #endif
