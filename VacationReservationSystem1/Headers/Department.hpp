@@ -1,7 +1,6 @@
-#include <string>
-
 #ifndef _DEPARTMENT_HPP_
 #define _DEPARTMENT_HPP_
+#include <string>
 
 class Department {
 

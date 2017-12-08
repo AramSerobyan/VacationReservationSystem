@@ -1,4 +1,4 @@
-#pragma once
+astd::vector<Department> departments; once
 #ifndef _CATALOGOFVACATIONS_HPP_
 #define _CATALOGOFVACATIONS_HPP_
 
@@ -19,3 +19,4 @@ private:
 
 
 #endif
+
