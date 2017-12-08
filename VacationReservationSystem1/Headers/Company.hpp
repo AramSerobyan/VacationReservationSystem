@@ -5,9 +5,10 @@
 #include "Archive.hpp"
 #include  "ListOfDepartments.hpp"
 #include "WishlistOfRequests.hpp"
-//#include "ListOfEmployees.hpp"
+#include  "ListOfEployees.hpp"
 #include "Controller.hpp"
-#include ""
+#include "CatalogOfVacations.hpp"
+#include "CatalogOfVacationRequests.hpp"
 
 class Company {
 
@@ -20,9 +21,10 @@ private:
 	ListOfEmployees l_emps;
 	WishlistOfRequests req_wlist;
 	ListOfDepartments departments;
-	CatalogOfVacations CatalogOfVacationsRequests;
-	vac_catalog vrec_catalog; 
+	CatalogOfVacations	vac_catalog;
+	CatalogOfVacationRequests vrec_catalog;
 public:
+
 	int startUp()
 
 };

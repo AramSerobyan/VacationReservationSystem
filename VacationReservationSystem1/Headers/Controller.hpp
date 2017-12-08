@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _CATALOGOFVACATIONS_HPP_
-#define _CATALOGOFVACATIONS_HPP_
+#ifndef _CONTROLLER_HPP_
+#define _CONTROLLER_HPP_
 
 #include <string>
 #include <vector>
@@ -11,8 +11,10 @@
 #include "Controller.hpp"
 #include "ListOfDepartments.hpp"
 #include "CatalogOfVacations.hpp"
-#include "WislistOfRequests"
-class CatalogOfVacations 
+#include "WishlistOfRequests.hpp"
+#include "CatalogOfVacationRequests.hpp"
+
+class Controller
 {
 public:
 	int  getCompleted(timeInfo date, &vector<Vaction> vacations);
@@ -25,13 +27,13 @@ public:
 	int completeVacation(std::pair<timeInfo, timeInfo> interval);
 	int updateRequest(int requestID, std::pair<timeInfo, timeInfo> interval);
 private:
-	std::vector<Vacation> vacations;
-	Archive archive;
-        Controller controller;
+		std::vector<Vacation> vacations;
+		Archive archive;
         ListOfEmployees l_emps;
         WishlistOfRequests req_wlist;
         ListOfDepartments departments;
-        CatalogOfVacations CatalogOfVacationsRequests;
+		CatalogOfVacations cat_vac;
+		CatalogOfVacationRequests cat_requests;
 
 }
 
