@@ -1,0 +1,19 @@
+﻿  Department.hpp
+  Company.hpp
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(4): error C2013: missing '>'
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(13): error C3646: 'archive': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(14): error C3646: 'controller': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(15): error C3646: 'l_emps': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(16): error C3646: 'req_wlist': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(17): error C3646: 'departments': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(18): error C3646: 'CatalogOfVacationsRequests': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(19): error C3646: 'vrec_catalog': unknown override specifier
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\fg42\documents\visual studio 2015\projects\vacationreservationsystem1\vacationreservationsystem1\company.hpp(23): error C2143: syntax error: missing ';' before '}'
+  Generating Code...
