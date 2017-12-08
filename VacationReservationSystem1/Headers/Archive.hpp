@@ -5,13 +5,13 @@
 
 #include <vector>
 #include "Record.hpp"
-//#include "Vacation"
+#include "Vacation.hpp"
 
 
 class Archive {
 
 public:
-	void store(Vacation* vac);
+	void store(std::vector<Vacation> vacations);
 	int load();
 
 private:
