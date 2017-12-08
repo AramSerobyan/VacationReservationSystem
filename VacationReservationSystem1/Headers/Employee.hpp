@@ -4,7 +4,7 @@
 #include<string>
 #include<vector>
 
-class EMPLOYEE{
+class Employee{
 private:
 	std::string name;
 	std::string email;
