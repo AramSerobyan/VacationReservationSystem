@@ -10,6 +10,7 @@
 #include "Archive.hpp"
 #include "Controller.hpp"
 #include "ListOfDepartments.hpp"
+#include "ListOfEployees.hpp"
 #include "CatalogOfVacations.hpp"
 #include "WishlistOfRequests.hpp"
 #include "CatalogOfVacationRequests.hpp"
@@ -17,13 +18,13 @@
 class Controller
 {
 public:
-	int  getCompleted(timeInfo date, &vector<Vaction> vacations);
+	int  getCompleted(timeInfo date, std::vector<Vacation> &vacations);
 	int load();
-        int check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval, bool *res);
-        int requestVacation(int employeeID, std::pair<timeInfo, timeInfo> timeInterval, bool *res);
+    int check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval, bool *res);
+    int requestVacation(int employeeID, std::pair<timeInfo, timeInfo> timeInterval);
 	int addToWhiteList(bool addQ);
 	int cancelRequest(int vacID);
-        int initiateVacation(std::pair<timeInfo, timeInfo> interval);
+    int initiateVacation(std::pair<timeInfo, timeInfo> interval);
 	int completeVacation(std::pair<timeInfo, timeInfo> interval);
 	int updateRequest(int requestID, std::pair<timeInfo, timeInfo> interval);
 private:
@@ -35,7 +36,7 @@ private:
 		CatalogOfVacations cat_vac;
 		CatalogOfVacationRequests cat_requests;
 
-}
+};
 
 
 #endif

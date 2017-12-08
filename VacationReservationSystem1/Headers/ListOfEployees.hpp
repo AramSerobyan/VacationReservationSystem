@@ -6,10 +6,10 @@
 class ListOfEmployees{ 
 
 public:
-	 Employee findEmployee(int ID);
+	 Employee* findEmployee(int ID);
      int load();
 private: 
 	std::vector<Employee> listOfEmployees; 
-}
+};
 #endif
 

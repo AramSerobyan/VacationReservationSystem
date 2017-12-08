@@ -19,7 +19,7 @@ private:
 	std::vector<int> mailbox; 
 
 public:
-	int getEmoloyeeId() { return Id; }
+	int getEmployeeId() { return Id; }
 	int getVacationDays() { return vacationDays; }
 	bool getStatus() { return status; }
 	int updateVacationDays(int num);

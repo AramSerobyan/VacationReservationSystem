@@ -12,8 +12,9 @@
 class CatalogOfVacationRequests
 {
 public:
-	int check(Employee emp, std::pair<timeInfo, timeInfo> timeInterval);
-	int newRequest(int empId, std::pair<timeInfo, timeInfo> timeInterval);
+	CatalogOfVacationRequests();
+	int check(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval);
+	int newRequest(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval);
 	int completeRequests(timeInfo date);
 	int getRequest(int Id, VacationRequest &VacReq);
 	int removeRequest(int Id, bool isCancelled);
@@ -24,6 +25,7 @@ public:
 private:
 	std::vector<VacationRequest> requests;
 	int generateId();
+	int counter;
 };
 
 

@@ -9,7 +9,7 @@ class ListOfDepartments {
 
 public:
 
-	int getDepartment(std::string name);
+	Department* getDepartment(std::string name);
 	int load();
 private:
 

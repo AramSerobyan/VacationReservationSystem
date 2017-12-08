@@ -25,6 +25,10 @@ struct timeInfo {
 		return;
 	}
 
+	int difference(timeInfo* tm,timeInfo* tm2)
+	{
+		return ((tm->year * 365 + tm->month * 12 + tm->day) - (tm2->year * 365 + tm2->month * 12 + tm2->day));
+	}
 
 };
 
