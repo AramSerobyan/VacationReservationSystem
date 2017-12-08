@@ -11,14 +11,17 @@ private:
 	std::string position;
 
 
-	int ID;
-	int VacationDays;
+	int Id;
+	int vacationDays;
 	
     bool status;
     bool hasEmail;
 	std::vector<int> mailbox; 
 
 public:
+	int getEmoloyeeId() { return Id; }
+	int getVacationDays() { return vacationDays; }
+	bool getStatus() { return status; }
 	int updateVacationDays(int num);
 	int newNotification(int requestID); 
 }
