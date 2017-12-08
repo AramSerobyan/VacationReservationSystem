@@ -8,8 +8,11 @@
 class ListOfDeparments {
 
 public:
-	std::vector<Department> departments;
 	int load();
+private:
+
+	std::vector<Department> departments;
+
 };
 
 
