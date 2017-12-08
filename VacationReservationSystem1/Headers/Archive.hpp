@@ -18,5 +18,5 @@ private:
 	std::vector<Record> records;
 
 
-}
+};
 #endif

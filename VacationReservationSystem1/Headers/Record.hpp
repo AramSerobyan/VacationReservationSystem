@@ -8,7 +8,7 @@
 class Record 
 {
 public:
-	Record(Vacation* vac);
+	Record(Vacation vac);
 
 	int getEmoloyeeId() { return employeeId; }
 	timeInfo getStartDay() { return startDay; }

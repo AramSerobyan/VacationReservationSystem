@@ -4,15 +4,16 @@
 #include <TimeInfo.hpp>
 #include <Department.hpp>
 #include <utility>
-class VacationRequest{
+
+class VacationRequest {
 private:
 	int vacationID;
 	std::pair<timeInfo, timeInfo> timeInterval;
-    Department department; 
+	Department department;
 public:
 	int becomeEmpty(bool isCancelled);
 	int checkIntersection(std::pair<timeinfo, timeinfo>, bool *res)
-}
+};
 
 
 #endif

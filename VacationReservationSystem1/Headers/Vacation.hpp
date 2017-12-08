@@ -3,6 +3,7 @@
 #include <string>
 #include "timeInfo.hpp"
 #include "Employee.hpp"
+
 class Vacation {
 private:
 	timeInfo startDay;
@@ -16,5 +17,5 @@ public:
 	timeInfo getEndDay() { return endDay; }
 	int becomeEmpty();
 
-}
+};
 #endif

@@ -2,7 +2,12 @@
 #define _COMPANY_HPP_
 
 #include <string>
-
+#include "Archive.hpp"
+#include  "ListOfDepartments.hpp"
+#include "WishlistOfRequests.hpp"
+//#include "ListOfEmployees.hpp"
+#include "Controller.hpp"
+#include ""
 
 class Company {
 
