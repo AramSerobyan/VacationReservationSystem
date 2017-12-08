@@ -33,3 +33,22 @@ int CatalogOfVacationRequests::check(Employee* emp, std::pair<timeInfo, timeInfo
 	}
 	return err;
 }
+VacationRequest* CatalogOfVacationRequests::getRequest(int Id)
+{
+	for (std::vector<VacationRequest>::iterator it = this->requests.begin(); it != this->requests.end(); ++it)
+	{
+		if (it->getVacationId() == Id) {
+			return &*it;
+		}
+	}
+	return NULL;
+}
+
+int CatalogOfVacationRequests::removeRequest(int Id, bool isCancelled)
+{
+	VacationRequest* vr = getRequest(Id);
+	vr->becomeEmpty(true);
+
+	return 1;
+
+}

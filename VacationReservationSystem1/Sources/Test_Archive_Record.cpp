@@ -11,7 +11,8 @@ int main()
 	Employee emp = Employee(1, "A", "U", "E", 20,dep);
 	ListOfEmployees emps = ListOfEmployees();
 	CatalogOfVacationRequests cvr = CatalogOfVacationRequests();
-	Controller c = Controller(emps,cvr);
+	WishlistOfRequests wlist = WishlistOfRequests();
+	Controller c = Controller(emps,cvr,wlist);
 	timeInfo tm1 = timeInfo();
 	timeInfo tm2 = timeInfo();
 	tm2.day = 12;

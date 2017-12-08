@@ -13,6 +13,8 @@ private:
 	Department* department;
 	Employee* emp;
 public:
+	Employee* getEmployee() { return emp; }
+	int getVacationId() { return vacationID; }
 	int becomeEmpty(bool isCancelled);
 	std::pair<timeInfo, timeInfo> getInterval() { return timeInterval; }
 	std::string getDepartmentName() { return department->getName(); }

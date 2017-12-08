@@ -18,7 +18,7 @@
 class Controller
 {
 public:
-	Controller(ListOfEmployees emps,CatalogOfVacationRequests cvr);
+	Controller(ListOfEmployees emps,CatalogOfVacationRequests cvr, WishlistOfRequests wlist);
 	int  getCompleted(timeInfo date, std::vector<Vacation> &vacations);
 	int load();
     int check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval);
@@ -34,7 +34,7 @@ private:
 		std::vector<Vacation> vacations;
 		Archive archive;
         ListOfEmployees l_emps;
-        WishlistOfRequests req_wlist;
+        WishlistOfRequests wlist;
         ListOfDepartments departments;
 		CatalogOfVacations cat_vac;
 		CatalogOfVacationRequests cat_requests;

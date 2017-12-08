@@ -12,7 +12,8 @@
 class WishlistOfRequests
 {
 public:
-	int newRequest(int empId, std::pair<timeInfo, timeInfo> timeInterval);
+	WishlistOfRequests();
+	int newRequest(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval);
 	int generateId();
 	int updateWishlist(std::pair<timeInfo, timeInfo> timeInterval, CatalogOfVacationRequests vrc);
 	int clearRequests();
@@ -20,6 +21,7 @@ public:
 
 private:
 	std::vector<VacationRequest> requests;
+	int counter;
 };
 
 

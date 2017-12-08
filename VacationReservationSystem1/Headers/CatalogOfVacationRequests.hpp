@@ -17,11 +17,13 @@ public:
 	int check(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval);
 	int newRequest(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval);
 	int completeRequests(timeInfo date);
-	int getRequest(int Id, VacationRequest &VacReq);
+	VacationRequest* getRequest(int Id);
 	int removeRequest(int Id, bool isCancelled);
 	int initiateVacations(timeInfo date, CatalogOfVacations vc);
 	int updateRequest(int rId, std::pair<timeInfo, timeInfo> timeInterval);
 	int load();
+	std::vector<VacationRequest> getRequestsVector() { return requests; }
+	CheckingStrategy getStrategy() { return strategy; }
 
 private:
 	CheckingStrategy strategy;
