@@ -9,10 +9,11 @@
 class CatalogOfVacations 
 {
 public:
-	Vacation* getCompleted(time_t);
+	Vacation* getCompleted(time_t date);
+	int load();
 
 private:
-
+	std::vector<Vacation> vacations;
 }
 
 
