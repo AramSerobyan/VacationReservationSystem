@@ -3,6 +3,7 @@
 
 #include<string>
 #include<vector>
+#include "Department.hpp"
 
 class Employee{
 private:
@@ -13,15 +14,18 @@ private:
 
 	int Id;
 	int vacationDays;
-	
-    bool status;
+	Department *department;
+    std::string status;
     bool hasEmail;
 	std::vector<int> mailbox; 
 
 public:
+	Employee(int id, std::string name, std::string status, std::string email, int vacationDays, Department* department);
 	int getEmployeeId() { return Id; }
+	Department* getEmployeeDepartment() { return department; }
+
 	int getVacationDays() { return vacationDays; }
-	bool getStatus() { return status; }
+	std::string getStatus() { return status; }
 	int updateVacationDays(int num);
 	int newNotification(int requestID); 
 };

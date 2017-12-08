@@ -14,6 +14,8 @@ private:
 	Employee* emp;
 public:
 	int becomeEmpty(bool isCancelled);
+	std::pair<timeInfo, timeInfo> getInterval() { return timeInterval; }
+	std::string getDepartmentName() { return department->getName(); }
 	int checkIntersection(std::pair<timeInfo, timeInfo>, bool *res);
 	VacationRequest(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval, int Id);
 };

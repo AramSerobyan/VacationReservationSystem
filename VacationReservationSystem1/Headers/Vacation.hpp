@@ -8,11 +8,11 @@ class Vacation {
 private:
 	timeInfo startDay;
 	timeInfo endDay;
-	Employee emp;
+	Employee* emp;
 	int Id;
 public:
-	Vacation(Employee emp,timeInfo startDay, timeInfo endDay);
-	Employee getEmployee() { return emp; }
+	Vacation(Employee* emp,timeInfo startDay, timeInfo endDay);
+	Employee* getEmployee() { return emp; }
 	int getId() { return Id; }
 	timeInfo getStartDay() { return startDay; }
 	timeInfo getEndDay() { return endDay; }

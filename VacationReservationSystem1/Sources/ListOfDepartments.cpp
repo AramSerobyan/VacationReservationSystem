@@ -3,6 +3,8 @@
 
 int ListOfDepartments::load()
 {
+	Department dep = Department("A", 2);
+	departments.push_back(dep);
     return 0;
 }
 

@@ -6,6 +6,7 @@
 class ListOfEmployees{ 
 
 public:
+	ListOfEmployees();
 	 Employee* findEmployee(int ID);
      int load();
 private: 

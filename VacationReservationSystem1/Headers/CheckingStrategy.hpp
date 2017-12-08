@@ -5,15 +5,15 @@
 #include <ctime>
 #include "Employee.hpp"
 #include "timeInfo.hpp"
-#include "CatalogOfVacationRequests.hpp"
+#include "VacationRequest.hpp"
 #include <utility>
 
 
 class CheckingStrategy
 {
 
-private:
-	virtual int check(Employee emp, std::pair<timeInfo, timeInfo> timeInterval, CatalogOfVacationRequests* vrc);
+public:
+	virtual int check(Employee *emp, std::pair<timeInfo, timeInfo> timeInterval, std::vector<VacationRequest> svrc);
 };
 
 

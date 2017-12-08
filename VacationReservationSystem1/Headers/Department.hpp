@@ -10,6 +10,11 @@ private:
 	int maxEmplsOnVacations;
 
 public:
+	Department(std::string name, int num)
+	{
+		this->name = name;
+		this->maxEmplsOnVacations = num;
+	}
 	std::string getName() { return name; }
 	int getMaxEmplsOnVacations() { return maxEmplsOnVacations; }
 

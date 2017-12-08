@@ -8,6 +8,7 @@
 #include "VacationRequest.hpp"
 #include "CatalogOfVacations.hpp"
 #include "Employee.hpp"
+#include "CheckingStrategy.hpp"
 
 class CatalogOfVacationRequests
 {
@@ -23,6 +24,7 @@ public:
 	int load();
 
 private:
+	CheckingStrategy strategy;
 	std::vector<VacationRequest> requests;
 	int generateId();
 	int counter;

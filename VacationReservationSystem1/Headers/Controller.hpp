@@ -18,15 +18,18 @@
 class Controller
 {
 public:
+	Controller(ListOfEmployees emps,CatalogOfVacationRequests cvr);
 	int  getCompleted(timeInfo date, std::vector<Vacation> &vacations);
 	int load();
-    int check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval, bool *res);
+    int check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval);
     int requestVacation(int employeeID, std::pair<timeInfo, timeInfo> timeInterval);
 	int addToWhiteList(bool addQ);
 	int cancelRequest(int vacID);
     int initiateVacation(std::pair<timeInfo, timeInfo> interval);
 	int completeVacation(std::pair<timeInfo, timeInfo> interval);
 	int updateRequest(int requestID, std::pair<timeInfo, timeInfo> interval);
+	int getTempEmpId() { return tempEmpId; }
+	std::pair<timeInfo, timeInfo> getTempInterval() { return tempInterval; }
 private:
 		std::vector<Vacation> vacations;
 		Archive archive;
@@ -35,6 +38,8 @@ private:
         ListOfDepartments departments;
 		CatalogOfVacations cat_vac;
 		CatalogOfVacationRequests cat_requests;
+		int tempEmpId;
+		std::pair<timeInfo, timeInfo> tempInterval;
 
 };
 

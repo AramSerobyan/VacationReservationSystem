@@ -3,7 +3,7 @@
 
 Record::Record(Vacation vac)
 {
-	employeeId = vac.getEmployee().getEmployeeId();
+	employeeId = vac.getEmployee()->getEmployeeId();
 	startDay = vac.getStartDay();
 	endDay = vac.getEndDay();
 }

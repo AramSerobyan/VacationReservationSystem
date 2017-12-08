@@ -24,3 +24,12 @@ int CatalogOfVacationRequests::load()
 {
 	return 0;
 }
+
+int CatalogOfVacationRequests::check(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval)
+{
+	int err = strategy.check(emp, timeInterval, requests);
+	if (!err) {
+		return 0;
+	}
+	return err;
+}
