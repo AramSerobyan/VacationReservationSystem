@@ -11,6 +11,7 @@
 class Archive {
 
 public:
+	Archive();
 	void store(std::vector<Vacation> vacations);
 	int load();
 

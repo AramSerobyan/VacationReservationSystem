@@ -17,6 +17,6 @@ void Archive::store(std::vector<Vacation> vacations)
 
 int Archive::load()
 {
-
+	return 0;
 }
 
