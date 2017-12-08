@@ -4,12 +4,18 @@
 
 #include <string>
 #include <vector>
+#include "TimeInfo.hpp"
 #include "VacationRequest.hpp"
+
 
 class WishlistOfRequests
 {
 public:
-	int newRequest(int empId,std::pair<time_t,time_t> timeInterval)
+	int newRequest(int empId, std::pair<timeInfo, timeInfo> timeInterval);
+	int generateId();
+	int updateWishlist(std::pair<timeInfo, timeInfo> timeInterval, CatalogOfVacationRequests vrc);
+	int clearRequests();
+	int load();
 
 private:
 	std::vector<VacationRequest> requests;
