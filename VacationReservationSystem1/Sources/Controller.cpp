@@ -47,5 +47,5 @@ int Controller::check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval
 			return addToWhiteList(true);
 		return 0;
 	}
-	return 0;
+	return 1;
 }

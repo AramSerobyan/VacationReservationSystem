@@ -12,5 +12,6 @@ VacationRequest::VacationRequest(Employee* emp, std::pair<timeInfo, timeInfo> ti
 int VacationRequest::becomeEmpty(bool isCancelled)
 {
 	emp->updateVacationDays(timeInterval.first.difference(&timeInterval.first, &timeInterval.second));
+	
 	return 0;
 }

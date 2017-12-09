@@ -21,7 +21,7 @@ int main()
 	std::cout << c.check(1, tm);
 	c.requestVacation(1, tm);
 	std::cout<<c.check(1, tm);
-	c.requestVacation(1, tm);
+	c.cancelRequest(1);
 	std::cout << c.check(1, tm);
 
 	return 0;

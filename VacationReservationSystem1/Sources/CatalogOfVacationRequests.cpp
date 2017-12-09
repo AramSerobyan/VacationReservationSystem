@@ -46,9 +46,16 @@ VacationRequest* CatalogOfVacationRequests::getRequest(int Id)
 
 int CatalogOfVacationRequests::removeRequest(int Id, bool isCancelled)
 {
-	VacationRequest* vr = getRequest(Id);
-	vr->becomeEmpty(true);
 
-	return 1;
+	for (std::vector<VacationRequest>::iterator it = this->requests.begin(); it != this->requests.end(); ++it)
+	{
+		if (it->getVacationId() == Id) {
+			it->becomeEmpty(true);
+			requests.erase(it);
+			return 1;
+		}
+		//counter++;
+	}
+	return 0;
 
 }
