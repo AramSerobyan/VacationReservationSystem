@@ -1,4 +1,5 @@
 #include "../Headers/WishlistOfRequests.hpp"
+#include "../Headers/CatalogOfVacationRequests.hpp"
 #include <string>
 
 bool bCollides(std::pair<timeInfo, timeInfo> a, std::pair<timeInfo, timeInfo> b) {

@@ -33,6 +33,19 @@ int Controller::cancelRequest(int id)
 	wlist.updateWishlist(tempInterval, cat_requests);
 	return 0;
 }
+int Controller::initiateVacation(std::pair<timeInfo, timeInfo> interval)
+{
+	return 0;
+}
+int Controller::completeVacation(std::pair<timeInfo, timeInfo> interval)
+{
+	return 0;
+}
+int Controller::updateRequest(int requestID, std::pair<timeInfo, timeInfo> interval)
+{
+	cat_requests.updateRequest(requestID, interval);
+	return 0;
+}
 int Controller::check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval)
 {
 	Employee* emp = this->l_emps.findEmployee(employeeID);
