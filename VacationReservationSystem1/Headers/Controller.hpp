@@ -19,8 +19,8 @@ class Controller
 {
 public:
 	Controller(ListOfEmployees emps,CatalogOfVacationRequests cvr, WishlistOfRequests wlist);
-	int  getCompleted(timeInfo date, std::vector<Vacation> &vacations);
-	int load();
+	//int  getCompleted(timeInfo date, std::vector<Vacation> &vacations);
+	//int load();
     int check(int employeeID, std::pair<timeInfo, timeInfo> timeInterval);
     int requestVacation(int employeeID, std::pair<timeInfo, timeInfo> timeInterval);
 	int addToWhiteList(bool addQ);

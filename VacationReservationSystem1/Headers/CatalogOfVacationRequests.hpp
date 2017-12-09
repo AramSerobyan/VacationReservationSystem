@@ -10,6 +10,8 @@
 #include "Employee.hpp"
 #include "CheckingStrategy.hpp"
 
+class WishlistOfRequests;
+
 class CatalogOfVacationRequests
 {
 public:

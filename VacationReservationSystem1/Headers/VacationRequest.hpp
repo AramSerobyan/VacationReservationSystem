@@ -20,6 +20,7 @@ public:
 	std::string getDepartmentName() { return department->getName(); }
 	int checkIntersection(std::pair<timeInfo, timeInfo>, bool *res);
 	VacationRequest(Employee* emp, std::pair<timeInfo, timeInfo> timeInterval, int Id);
+	void setInterval(std::pair<timeInfo, timeInfo> timeInterval) { this->timeInterval = timeInterval; }
 };
 
 

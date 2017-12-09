@@ -6,7 +6,8 @@
 #include <vector>
 #include "TimeInfo.hpp"
 #include "VacationRequest.hpp"
-#include "CatalogOfVacationRequests.hpp"
+
+class CatalogOfVacationRequests;
 
 
 class WishlistOfRequests

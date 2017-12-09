@@ -10,11 +10,14 @@
 class CatalogOfVacations 
 {
 public:
+	CatalogOfVacations();
 	Vacation* getCompleted(timeInfo date);
+	void addVacation(int id, std::pair<timeInfo, timeInfo> timeInterval);
 	int load();
 
 private:
-	std::vector<Vacation> vacations;
+	int id;
+	std::vector<Vacation*> vacations;
 };
 
 
